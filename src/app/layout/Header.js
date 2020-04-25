@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 class Header extends React.Component {
   state = {
@@ -21,7 +22,7 @@ class Header extends React.Component {
         }}
       >
         <div className="navbar-brand">
-          <a className="navbar-item">
+          <NavLink className="navbar-item" to="/" activeClassName="is-active">
             <img
               style={{
                 borderTopLeftRadius: "50%",
@@ -34,8 +35,8 @@ class Header extends React.Component {
               width="30px"
               alt=""
             />
-            <span>alangrinberg.net</span>
-          </a>
+            <span>Alan's Site</span>
+          </NavLink>
           <button className="button navbar-burger" onClick={this.toggleNav}>
             <span></span>
             <span></span>
@@ -48,7 +49,7 @@ class Header extends React.Component {
           }
         >
           <div className="navbar-start">
-            <a className="navbar-item">
+            <NavLink className="navbar-item" to="/blog" activeClassName="is-active">
               <span
                 className="icon has-text-primary"
                 style={{ marginRight: 5 }}
@@ -56,8 +57,8 @@ class Header extends React.Component {
                 <i className="fas fa-code"></i>
               </span>
               Code Blog
-            </a>
-            <a className="navbar-item">
+            </NavLink>
+            <a href="https://medium.com/alagrin" className="navbar-item">
               <span className="icon" style={{ marginRight: 5 }}>
                 <i className="fab fa-lg fa-medium"></i>
               </span>
@@ -93,7 +94,7 @@ class Header extends React.Component {
                 className="icon"
                 style={{ color: "#0077B5", marginLeft: 5 }}
               >
-                <i className="fab fa-lg fa-document"></i>
+                <i class="fas fa-lg fa-file"></i>
               </span>
             </a>
           </div>
