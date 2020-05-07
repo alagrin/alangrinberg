@@ -94,7 +94,7 @@ class Header extends React.Component {
                 className="icon"
                 style={{ color: "#0077B5", marginLeft: 5 }}
               >
-                <i class="fas fa-lg fa-file"></i>
+                <i className="fas fa-lg fa-file"></i>
               </span>
             </a>
           </div>
