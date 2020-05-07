@@ -2,8 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import * as contentful from "contentful";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
+
+var client = contentful.createClient({
+  space: '4iv3l7hmky4k',
+  accessToken: 'YIWfUNaGJPCxRyu8OxoTpivJRJ_NOPR-YviUjkGyvZs'
+})
+
+client.getEntries().then(entries => {
+  entries.items.forEach(entry => {
+    console.log(entry.fields);
+  })
+})
 
 ReactDOM.render(
   <Router>
