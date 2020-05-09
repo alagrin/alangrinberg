@@ -65,11 +65,11 @@ class Header extends React.Component {
               Medium
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">Projects</a>
+              <a className="navbar-link" href="https://github.com/alagrin">Projects</a>
               <div className="navbar-dropdown">
-                <a className="navbar-item">Overview</a>
+                <a className="navbar-item" href="https://alangrinberg.net">Main Site</a>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">This Site</a>
+                <a className="navbar-item" href="/">Overview pending</a>
               </div>
             </div>
           </div>
