@@ -49,7 +49,11 @@ class Header extends React.Component {
           }
         >
           <div className="navbar-start">
-            <NavLink className="navbar-item" to="/blog" activeClassName="is-active">
+            <NavLink
+              className="navbar-item"
+              to="/blog"
+              activeClassName="is-active"
+            >
               <span
                 className="icon has-text-primary"
                 style={{ marginRight: 5 }}
@@ -58,18 +62,29 @@ class Header extends React.Component {
               </span>
               Code Blog
             </NavLink>
-            <a href="https://medium.com/alagrin" className="navbar-item">
+            <NavLink
+              href="https://medium.com/alagrin"
+              className="navbar-item"
+              to="/medium"
+              activeClassName="is-active"
+            >
               <span className="icon" style={{ marginRight: 5 }}>
                 <i className="fab fa-lg fa-medium"></i>
               </span>
               Medium
-            </a>
+            </NavLink>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link" href="https://github.com/alagrin">Projects</a>
+              <a className="navbar-link" href="https://github.com/alagrin">
+                Projects
+              </a>
               <div className="navbar-dropdown">
-                <a className="navbar-item" href="https://alangrinberg.net">Main Site</a>
+                <a className="navbar-item" href="https://alangrinberg.net">
+                  Main Site
+                </a>
                 <hr className="navbar-divider" />
-                <a className="navbar-item" href="/">Overview pending</a>
+                <a className="navbar-item" href="/">
+                  Overview pending
+                </a>
               </div>
             </div>
           </div>
@@ -87,7 +102,10 @@ class Header extends React.Component {
                 <i className="fab fa-lg fa-linkedin"></i>
               </span>
             </a>
-            <a className="navbar-item" href="/">
+            <a
+              className="navbar-item"
+              href="https://drive.google.com/open?id=1Tz5VE5hEM5lwZbauX1hLjDfaXf83XT9I"
+            >
               Resume
               {/* TODO edit here to point to actual hosted resume */}
               <span
