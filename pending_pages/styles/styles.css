@@ -1,0 +1,99 @@
+body,
+html {
+  height: 100%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/455_03581.jpg");
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.bio {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#intro {
+  font-family: "Raleway", sans-serif;
+}
+
+.tech {
+  
+}
+
+.works {
+  margin-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.card-link {
+  color: #004085;
+}
+
+.card-text {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+}
+
+.contact {
+  width: 50%;
+}
+
+.btn-primary {
+  color: black;
+}
+
+#resume-card {
+  margin: 5% auto;
+}
+
+.placeholder {
+  font-size: large;
+  margin: 15% auto;
+  text-align: center;
+}
+
+.placeholder .card {
+  margin: auto 25%;
+}
+
+#gradient-container {
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#title-section {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 5%;
+}
