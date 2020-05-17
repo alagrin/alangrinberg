@@ -15,28 +15,13 @@ class Header extends React.Component {
   render() {
     return (
       <nav
-        className="navbar"
+        className="navbar is-fixed-top is-inline-block"
         aria-label="main navigation"
         style={{
           borderBottom: "solid 1px #dddddd",
         }}
       >
-        <div className="navbar-brand">
-          <NavLink className="navbar-item" to="/" activeClassName="is-active">
-            <img
-              style={{
-                borderTopLeftRadius: "50%",
-                borderTopRightRadius: "50%",
-                borderBottomLeftRadius: "50%",
-                borderBottomRightRadius: "50%",
-                marginRight: 15,
-              }}
-              src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAU3AAAAJGE1MzYxNzYzLTE1NTUtNDEyYi04MzRjLTgzZjNkOGU0MGIzNg.jpg"
-              width="30px"
-              alt=""
-            />
-            <span>Alan's Site</span>
-          </NavLink>
+        <div className="float-left">
           <button className="button navbar-burger" onClick={this.toggleNav}>
             <span></span>
             <span></span>
@@ -72,9 +57,9 @@ class Header extends React.Component {
               Medium
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link" href="https://github.com/alagrin">
+              <div className="navbar-link">
                 Projects
-              </a>
+              </div>
               <div className="navbar-dropdown">
                 <a className="navbar-item" href="https://alangrinberg.net">
                   Main Site
@@ -105,7 +90,6 @@ class Header extends React.Component {
               href="https://drive.google.com/open?id=1Tz5VE5hEM5lwZbauX1hLjDfaXf83XT9I"
             >
               Resume
-              {/* TODO edit here to point to actual hosted resume */}
               <span
                 className="icon"
                 style={{ color: "#0077B5", marginLeft: 5 }}

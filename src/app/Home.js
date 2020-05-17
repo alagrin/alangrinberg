@@ -1,10 +1,10 @@
 import React from "react";
-import {Card, CardBody, CardImg, Container} from "reactstrap";
+import "../styles/styles.css";
 
 const Home = () => {
   return (
-    <Container>
-      <h1>Welcome to my Portfolio Site</h1>
+    <body className="container has-navbar-fixed-top">
+      <h1 className="text-center">Welcome to my Portfolio Site</h1>
 
       <div className="text-left">
         <h2>My Bio</h2>
@@ -58,74 +58,95 @@ const Home = () => {
 
       <div className="works">
         <h2>Recent Work</h2>
-        <Card>
-            <CardImg src="./assets/template.jpg"></CardImg>
-            <CardBody></CardBody>
-        </Card>
-          <div className="card">
-            <img
-              className="card-image"
-              src="./assets/template.jpg"
-              alt="trivia game"
-            />
-            <div className="card-content">
-              <h5 className="card-title">Trivia App</h5>
-              <p className="card-text">
-                Coded with React as well as reactstrap for styling, this app
-                works with an API and user interaction for a casual game
-                experience
-              </p>
-              <a id="project-link" href="/" className="card-link">
-                Card link
-              </a>
+        <div className="columns">
+          <div className="column">
+            <div className="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src={require("./assets/template.jpg")}
+                    alt="Placeholder"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br />
+                  <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src={require("./assets/template.jpg")}
+                    alt="Placeholder"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br />
+                  <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src={require("./assets/template.jpg")}
+                    alt="Placeholder"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br />
+                  <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src={require("./assets/template.jpg")}
+                    alt="Placeholder"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                  <a href="#">#css</a> <a href="#">#responsive</a>
+                  <br />
+                  <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        </div>
-      </div>
-      <div className="card">
-        <img
-          className="card-img-top"
-          src="./assets/template.jpg"
-          alt="project preview"
-        />
-        <div className="card-body">
-          <h5 className="card-title">NLP Project</h5>
-          <p className="card-text">Pending...</p>
-          <a id="project-link" href="/" className="card-link">
-            Card link
-          </a>
-        </div>
-      </div>
-      <div className="card">
-        <img
-          className="card-img-top"
-          src="./assets/template.jpg"
-          alt="project preview"
-        />
-        <div className="card-body">
-          <h5 className="card-title">Personal Site</h5>
-          <p className="card-text">Pending...</p>
-          <a id="project-link" href="/" className="card-link">
-            Card link
-          </a>
-        </div>
-      </div>
-      <div className="card">
-        <img
-          className="card-img-top"
-          src="./assets/template.jpg"
-          alt="project preview"
-        />
-        <div className="card-body">
-          <h5 className="card-title">COVID Portal</h5>
-          <p className="card-text">Link pending...</p>
-          <a id="project-link" href="/" className="card-link">
-            Card link
-          </a>
-        </div>
-      </div>
-
-      <div id="resume-card" className="contact card">
+      <div className="contact container">
         <div className="card-body">
           <h5 className="card-title text-center">Contact</h5>
           <p className="card-text text-center">Feel free to reach out below!</p>
@@ -137,7 +158,6 @@ const Home = () => {
                 type="email"
                 className="form-control"
                 id="exampleInputEmail1"
-                aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
               <small id="emailHelp" className="form-text text-muted">
@@ -168,15 +188,8 @@ const Home = () => {
           </form>
         </div>
       </div>
-
-      <footer className="footer text-center">
-        <div className="container">
-          <span className="text-muted">
-            &copy; Alan Grinberg - Seattle - 2020
-          </span>
-        </div>
-      </footer>
-    </Container>
+    </body>
   );
 };
+
 export default Home;
