@@ -5,13 +5,13 @@ import FadeInSection from "../components/FadeInSection";
 
 const Home = () => {
   return (
-    <div className="">
-      <h1 className="text-center">Welcome to my Portfolio Site</h1>
+    <div>
+      <h1 className="text-center" style={{marginTop: "20px"}}>Welcome to my Portfolio Site</h1>
       <div className="jumbotron" style={{ height: "25vh" }}>
         <IntroView />
       </div>
       <FadeInSection>
-        <div className="text-left" style={{height: "100vh"}}>
+        <div className="text-left">
           <h2>My Bio</h2>
           <p id="intro">
             Currently, I'm at Computer Science Master's Student at Northeastern
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
       </FadeInSection>
       <FadeInSection>
-      <div style={{height: "100vh"}}>
+      <div>
         <h2>Technology Summary</h2>
         <div className="list-group list-group-flush">
           <div className="row">

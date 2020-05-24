@@ -18,7 +18,6 @@ class Header extends React.Component {
         className="navbar is-fixed-top is-inline-block"
         aria-label="main navigation"
         style={{
-          borderBottom: "solid 1px #dddddd",
           backgroundColor: "rgb(242, 237, 245)",
         }}
       >
