@@ -2,7 +2,7 @@
   "name": "alangrinberg",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alang-portfolio.herokuapp.com/",
+  "homepage": "https://alagrin.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -40,6 +40,7 @@
     "build": "npm-run-all build-css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
     "postinstall": "npm run build"
   },
   "engines": {
