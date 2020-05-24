@@ -12,6 +12,7 @@
     "bulma-extensions": "^6.2.7",
     "bulma-start": "0.0.4",
     "contentful": "^7.14.4",
+    "express": "^4.17.1",
     "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "moment": "^2.18.1",
@@ -37,10 +38,13 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-ss": "react-scripts build",
     "build": "npm-run-all build-css",
-    "predeploy": "npm run build-ss",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "react-scripts build"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.14.5"
   },
   "eslintConfig": {
     "extends": "react-app"
