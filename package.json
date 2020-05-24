@@ -39,7 +39,8 @@
     "build-ss": "react-scripts build",
     "build": "npm-run-all build-css",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "npm run build"
   },
   "engines": {
     "node": "12.16.1",
