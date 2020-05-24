@@ -19,6 +19,7 @@ class Header extends React.Component {
         aria-label="main navigation"
         style={{
           borderBottom: "solid 1px #dddddd",
+          backgroundColor: "rgb(242, 237, 245)",
         }}
       >
         <div className="float-left">
@@ -34,6 +35,9 @@ class Header extends React.Component {
           }
         >
           <div className="navbar-start">
+            <NavLink className="navbar-item" to="/">
+              Home
+            </NavLink>
             <NavLink
               className="navbar-item"
               to="/blog"
@@ -47,19 +51,14 @@ class Header extends React.Component {
               </span>
               Code Blog
             </NavLink>
-            <a
-              href="https://medium.com/@alagrin"
-              className="navbar-item"
-            >
+            <a href="https://medium.com/@alagrin" className="navbar-item">
               <span className="icon" style={{ marginRight: 5 }}>
                 <i className="fab fa-lg fa-medium"></i>
               </span>
               Medium
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">
-                Projects
-              </div>
+              <div className="navbar-link">Projects</div>
               <div className="navbar-dropdown">
                 <a className="navbar-item" href="https://alangrinberg.net">
                   Main Site
@@ -72,6 +71,9 @@ class Header extends React.Component {
             </div>
           </div>
           <div className="navbar-end">
+            <NavLink className="navbar-item" to="/contact">
+              Contact
+            </NavLink>
             <a className="navbar-item" href="https://github.com/alagrin">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>

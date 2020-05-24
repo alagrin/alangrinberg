@@ -1,30 +1,37 @@
 import React from "react";
 import "../styles/styles.css";
+import IntroView from "../components/IntroView";
+import FadeInSection from "../components/FadeInSection";
 
 const Home = () => {
   return (
-    <body className="container has-navbar-fixed-top">
+    <div className="">
       <h1 className="text-center">Welcome to my Portfolio Site</h1>
-
-      <div className="text-left">
-        <h2>My Bio</h2>
-        <p id="intro">
-          Currently, I'm at Computer Science Master's Student at Northeastern
-          University, based in Seattle. Technology has been a passion of mine
-          since my days tinkering around with hardware on my desktop Dell
-          computer as a kid. Eventually, I decided to jump into computer science
-          after years of work in sales and customer success. What you will see
-          ahead are works that showcase my ongoing efforts to excel in full
-          stack software engineering. Thanks for visiting!
-          <br />
-          <br />A proactive individual seeking a role as a Software Engineer,
-          proficient in the building of modern apps with React, Java, and
-          Python. Additional areas of experience include the creation of machine
-          learning models and aesthetic/design principles. Passionate about
-          modern applications of AI and data mining for a better life.
-        </p>
+      <div className="jumbotron" style={{ height: "25vh" }}>
+        <IntroView />
       </div>
-      <div>
+      <FadeInSection>
+        <div className="text-left" style={{height: "100vh"}}>
+          <h2>My Bio</h2>
+          <p id="intro">
+            Currently, I'm at Computer Science Master's Student at Northeastern
+            University, based in Seattle. Technology has been a passion of mine
+            since my days tinkering around with hardware on my desktop Dell
+            computer as a kid. Eventually, I decided to jump into computer
+            science after years of work in sales and customer success. What you
+            will see ahead are works that showcase my ongoing efforts to excel
+            in full stack software engineering. Thanks for visiting!
+            <br />
+            <br />A proactive individual seeking a role as a Software Engineer,
+            proficient in the building of modern apps with React, Java, and
+            Python. Additional areas of experience include the creation of
+            machine learning models and aesthetic/design principles. Passionate
+            about modern applications of AI and data mining for a better life.
+          </p>
+        </div>
+      </FadeInSection>
+      <FadeInSection>
+      <div style={{height: "100vh"}}>
         <h2>Technology Summary</h2>
         <div className="list-group list-group-flush">
           <div className="row">
@@ -55,22 +62,26 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      </FadeInSection>
+      <FadeInSection>
       <div className="works">
         <h2>Recent Work</h2>
         <div className="columns">
           <div className="column">
             <div className="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
+              <header className="card-header text-center">
+                <p className="card-header-title">Covid App</p>
+              </header>
+              <div className="card-image">
+                <figure className="image is-4by3">
                   <img
                     src={require("./assets/template.jpg")}
                     alt="Placeholder"
                   />
                 </figure>
               </div>
-              <div class="card-content">
-                <div class="content">
+              <div className="card-content">
+                <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                   <a href="#">#css</a> <a href="#">#responsive</a>
@@ -81,17 +92,17 @@ const Home = () => {
             </div>
           </div>
           <div className="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
+            <div className="card">
+              <div className="card-image">
+                <figure className="image is-4by3">
                   <img
                     src={require("./assets/template.jpg")}
                     alt="Placeholder"
                   />
                 </figure>
               </div>
-              <div class="card-content">
-                <div class="content">
+              <div className="card-content">
+                <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                   <a href="#">#css</a> <a href="#">#responsive</a>
@@ -102,17 +113,17 @@ const Home = () => {
             </div>
           </div>
           <div className="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
+            <div className="card">
+              <div className="card-image">
+                <figure className="image is-4by3">
                   <img
                     src={require("./assets/template.jpg")}
                     alt="Placeholder"
                   />
                 </figure>
               </div>
-              <div class="card-content">
-                <div class="content">
+              <div className="card-content">
+                <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                   <a href="#">#css</a> <a href="#">#responsive</a>
@@ -123,17 +134,17 @@ const Home = () => {
             </div>
           </div>
           <div className="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
+            <div className="card">
+              <div className="card-image">
+                <figure className="image is-4by3">
                   <img
                     src={require("./assets/template.jpg")}
                     alt="Placeholder"
                   />
                 </figure>
               </div>
-              <div class="card-content">
-                <div class="content">
+              <div className="card-content">
+                <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                   <a href="#">#css</a> <a href="#">#responsive</a>
@@ -145,50 +156,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="contact container">
-        <div className="card-body">
-          <h5 className="card-title text-center">Contact</h5>
-          <p className="card-text text-center">Feel free to reach out below!</p>
-          <hr />
-          <form>
-            <div className="form-group">
-              <label>Email address</label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                placeholder="Enter email"
-              />
-              <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
-            </div>
-            <div className="form-group">
-              <label>Name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="name"
-                placeholder="John Smith"
-              />
-            </div>
-            <div className="form-group">
-              <label>Tel:</label>
-              <input
-                type="tel"
-                className="form-control"
-                id="telephone"
-                placeholder="4158157775"
-              />
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </body>
+      </FadeInSection>
+    </div>
   );
 };
 
