@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/alangrinberg/static/css/main.1db2bf87.chunk.css",
+    "main.js": "/alangrinberg/static/js/main.d2eefd27.chunk.js",
+    "main.js.map": "/alangrinberg/static/js/main.d2eefd27.chunk.js.map",
+    "runtime-main.js": "/alangrinberg/static/js/runtime-main.0509a7df.js",
+    "runtime-main.js.map": "/alangrinberg/static/js/runtime-main.0509a7df.js.map",
+    "static/css/2.4819d237.chunk.css": "/alangrinberg/static/css/2.4819d237.chunk.css",
+    "static/js/2.f196a6e9.chunk.js": "/alangrinberg/static/js/2.f196a6e9.chunk.js",
+    "static/js/2.f196a6e9.chunk.js.map": "/alangrinberg/static/js/2.f196a6e9.chunk.js.map",
+    "index.html": "/alangrinberg/index.html",
+    "precache-manifest.53e9366a27722a910a6cc8b18320c923.js": "/alangrinberg/precache-manifest.53e9366a27722a910a6cc8b18320c923.js",
+    "service-worker.js": "/alangrinberg/service-worker.js",
+    "static/css/2.4819d237.chunk.css.map": "/alangrinberg/static/css/2.4819d237.chunk.css.map",
+    "static/css/main.1db2bf87.chunk.css.map": "/alangrinberg/static/css/main.1db2bf87.chunk.css.map",
+    "static/js/2.f196a6e9.chunk.js.LICENSE.txt": "/alangrinberg/static/js/2.f196a6e9.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/alangrinberg/static/media/455_03581.9494f6c0.jpg",
+    "static/media/template.jpg": "/alangrinberg/static/media/template.61c6dd15.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0509a7df.js",
+    "static/css/2.4819d237.chunk.css",
+    "static/js/2.f196a6e9.chunk.js",
+    "static/css/main.1db2bf87.chunk.css",
+    "static/js/main.d2eefd27.chunk.js"
+  ]
+}
